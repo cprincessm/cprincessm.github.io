@@ -1,0 +1,83 @@
+/*CSS document*/
+
+body {
+    background-color: #e6eded;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+article h2 {
+    color: #000000;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 1em;
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-transform: lowercase;
+}
+
+nav ul li a {
+    color: #696969;
+}
+
+a {
+    color: #696969;
+    text-decoration: none;
+}
+
+h2 {
+    color: #ffffff;
+    padding: 0.1em;
+}
+
+h3 {
+    color: #000000;
+    font-weight: bold;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.highlight h2 {
+    background-color: #d9cc55;
+}
+
+.upcoming h2 {
+    background-color: #b8ad48;
+}
+
+.readinglists h2 {  
+    background-color: #6d9db8;
+}
+
+.reviews h2 {
+    background-color: #165599;
+}
