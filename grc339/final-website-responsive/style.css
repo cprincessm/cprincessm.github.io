@@ -1,0 +1,208 @@
+/*CSS document*/
+
+body {
+    background-color: #e6eded;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+div.container {
+    max-width: 80em;
+    margin: auto;
+}
+
+main.gallery {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(65% + 5em);
+}
+
+section {
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 1em auto 2em;
+    max-width: 40em;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+article h2 {
+    color: #000000;
+}
+
+article figcaption {
+    color: #696969;
+}
+
+article figure img {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+figure {
+    margin: 0;
+}
+
+.gallery figure {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+input {
+    display: none;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8) {
+    left: 0;
+    opacity: 1;
+}
+
+nav.photobar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    flex: 1 0 6em;
+    padding: 0.2em;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    border: 0.2em solid #FFFFFF;
+    border-width: 0.2em 0;
+}
+
+ul li {
+    display: inline;
+    padding: 1em;
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-transform: lowercase;
+}
+
+ul a {
+    color: #696969;
+}
+
+a {
+    color: #696969;
+    text-decoration: none;
+}
+
+h2 {
+    color: #ffffff;
+    padding: 0.1em;
+}
+
+h3 {
+    color: #000000;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.highlight h2 {
+    background-color: #d9cc55;
+}
+
+.upcoming h2 {
+    background-color: #b8ad48;
+}
+
+.readinglists h2 {
+    background-color: #6d9db8;
+}
+
+.reviews h2 {
+    background-color: #165599;
+}
+
+.photogallery h2 {
+    background-color: #e6eded;
+}
+
+.gallery figcaption {
+    color: #696969;
+    text-align: center;
+    padding-top: 0.1em;
+}
+
+@media screen and (min-width:60em) {
+    
+    div.container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 1em;
+    }
+    
+    header {
+        grid-column: 1/3;
+    }
+    
+    main {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 1em; 
+    }
+
+    section.highlight {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    section.photogallery {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    section.upcoming {
+        grid-column: 3/4;
+    }
+
+    article {
+        grid-column: 1/2;
+    }
+    
+    aside {
+        grid-column: 2/3;
+    }
+    
+    nav.photobar {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    label {
+        padding: 0.4em
+    }
+    
+    footer {
+        grid-column: 1/4;
+    }
+    
+}
