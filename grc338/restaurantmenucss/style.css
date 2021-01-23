@@ -1,0 +1,38 @@
+/*CSS Document*/
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+h1 {
+    color: rgb(0, 58, 125);
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    background-color: #ffffff;
+    padding: 0.5em 1em 0.5em 1em;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: rgb(0, 58, 125);
+}
+
+.description {
+    padding-left: 2em;
+    color: rgb(122, 134, 158);
+}
+
+.price {
+    padding-left: 2em;
+    color: rgb(103, 136, 201);
+}
+
+li {
+    list-style: none;
+}
