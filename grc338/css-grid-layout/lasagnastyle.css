@@ -1,0 +1,108 @@
+@import url("https://use.typekit.net/jsq6klo.css");
+
+/*CSS DOCUMENT*/
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;	padding: 0;	border: 0;	vertical-align: baseline;} /*My edited version of the Eric Meyer’s reset tool. Feel free to keep it or delete it. */
+
+div.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2em, 2em, auto, 2em;
+    margin: auto;
+    max-width: 50em;
+}
+
+header {
+    padding: 2em 1em 1em 1em;
+    grid-column: 1/5;
+}
+
+figure {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #000000;
+    padding-bottom: 1em;
+}
+
+img {
+    width: 100%; /*Please leave this line.*/
+    margin: 1em;
+    padding: 1em 1em;
+    grid-column: 1/2;
+}
+
+figcaption {
+    margin: 2em;
+    padding: 1em 2em;
+    color: #ffffff;
+    font-family: "hero-new", sans-serif;
+    font-size: 1em;
+    grid-column: 2/3;
+}
+
+main{
+    grid-row: 3/4;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+h1 {
+    color: #9a250c;
+    font-family: "lemonde-journal", serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+h2 {
+    padding-top: 1em;
+    font-family: "hero-new", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 1em;
+    font-size: 1em;
+    font-family: "hero-new", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: double;
+    padding: 0.5em;
+}
+
+ul {
+    margin: 0em 1em 1em 2em;
+    list-style: none;
+    font-family: "lemonde-journal", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul li {
+    padding: 0.5em 1em;
+}
+
+ol {
+    padding: 0.5em 3em;
+    margin: 1;
+    font-family: "lemonde-journal", serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+ol li {
+    padding: 0em 0em 1em 1em;
+    line-height: 1.5em;
+}
+
+footer {
+    font-family: "hero-new", sans-serif;
+    padding: 1em;
+    color: #ffffff;
+    background-color: #9a250c;
+    grid-column: 1/5;
+}
